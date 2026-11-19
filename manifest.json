@@ -1,0 +1,16 @@
+{
+  "name": "أني عراقي",
+  "short_name": "أني عراقي",
+  "description": "منصة التواصل الاجتماعي العراقية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A110F",
+  "theme_color": "#0E7C66",
+  "icons": [
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

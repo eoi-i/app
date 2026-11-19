@@ -1,0 +1,18 @@
+# أسرار وبيئة
+.env
+.env.*
+*.pem
+*.key
+service_role*
+secrets*
+
+# نظام ومحررات
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+dist/
+test-results/
+public/

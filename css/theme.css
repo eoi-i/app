@@ -1,0 +1,10 @@
+:root{
+  --primary:#0E7C66;--primary-2:#14A585;--gold:#D4A017;--danger:#E5484D;
+  --bg:#F4F6F3;--card:#FFFFFF;--text:#14201C;--muted:#6B7B75;--line:#E4E9E6;--chip:#EAF1EE;
+  --shadow:0 2px 14px rgba(14,60,48,.08);--radius:18px;--nav-h:64px;
+  --grad:linear-gradient(135deg,#0E7C66 0%,#14A585 55%,#D4A017 130%);
+}
+[data-theme="dark"]{
+  --bg:#0A110F;--card:#121C19;--text:#EAF2EE;--muted:#8FA39B;--line:#1F2D29;--chip:#182420;
+  --shadow:0 2px 14px rgba(0,0,0,.45);
+}

@@ -1,0 +1,51 @@
+#b-theme{display:none}
+#pf-out{display:none}
+body:not([data-page="profile"]) #b-set{display:none}
+body:not([data-page="home"]) #b-refresh{display:none}
+.set{position:fixed;inset:0;z-index:60;background:var(--bg);display:flex;flex-direction:column;max-width:560px;margin:0 auto;animation:up .2s ease}
+.set-head{display:flex;align-items:center;padding:calc(8px + env(safe-area-inset-top)) 10px 8px}
+.set-head h1{font-size:18px;font-weight:800;flex:1;text-align:center;margin-inline-end:40px}
+.set-body{flex:1;overflow-y:auto;padding:0 14px calc(30px + env(safe-area-inset-bottom))}
+.set-sec{color:var(--muted);font-weight:700;font-size:14px;margin:20px 6px 8px}
+.set-card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.sr{display:flex;align-items:center;gap:12px;width:100%;padding:15px 16px;text-align:start;font-weight:700;transition:.15s}
+.sr:active{background:var(--chip)}
+.sr-i{color:var(--muted);display:grid;place-items:center;flex:none}
+.sr-i .ic{width:22px;height:22px}
+.sr-l{flex:1;min-width:0}
+.sr-s{display:block;color:var(--muted);font-weight:400;font-size:12.5px;margin-top:2px}
+.sr-v{color:var(--muted);font-weight:600;font-size:14px}
+.sr-c{color:var(--muted);display:grid;place-items:center}
+.sr-c .ic{width:18px;height:18px}
+.sr.soon .sr-l,.sr.soon .sr-i{opacity:.55}
+.sr .chk{color:var(--primary)}
+.set-ver{text-align:center;color:var(--muted);margin:22px 0 6px}
+.set-note{color:var(--muted);font-size:13px;margin:10px 6px;line-height:1.7}
+.sw{position:relative;width:48px;height:28px;border-radius:14px;background:var(--line);transition:.2s;flex:none}
+.sw::after{content:'';position:absolute;top:3px;inset-inline-start:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s}
+.sw.on{background:var(--primary)}
+.sw.on::after{inset-inline-start:23px}
+.set-card .sr+.sr{border-top:1px solid var(--line)}
+.set-sec{letter-spacing:.2px}
+.sr.danger{justify-content:center;color:#e5484d}
+.sr.danger .sr-i{color:#e5484d}
+.sr.danger .sr-l{flex:none}
+
+.acc-h{display:flex;align-items:center;gap:14px;margin-top:14px;padding:16px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);cursor:pointer}
+.acc-h:active{background:var(--chip)}
+.acc-n{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.acc-n b{font-size:17px;font-weight:800;display:flex;align-items:center;gap:4px}
+.acc-n span{color:var(--muted);font-size:14px}
+.acc-h .sr-c{color:var(--muted)}
+.sr.dng .sr-i,.sr.dng .sr-l{color:#e5484d}
+.sr.dng .sr-s{color:var(--muted)}
+
+html.a11y-bold body,html.a11y-bold body *{font-weight:700}
+html.a11y-bold .set-sec,html.a11y-bold h1,html.a11y-bold h3,html.a11y-bold b{font-weight:800}
+html.a11y-hc{--muted:#d0d0d0;--line:#6b6b6b}
+html.a11y-hc[data-theme="light"]{--muted:#2a2a2a;--line:#8a8a8a}
+
+html[data-font] body,html[data-font] button,html[data-font] input,html[data-font] textarea,html[data-font] select{font-family:var(--ff),'Cairo',system-ui,sans-serif!important}
+
+/* شعار «أني عراقي» يتبع ألوان الثيم المختار */
+body:not([data-page="home"]) .topbar .logo{background:linear-gradient(135deg,var(--primary) 0%,var(--gold) 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent}
